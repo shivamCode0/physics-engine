@@ -52,7 +52,7 @@ class PhysicsSimulation:
             self.handle_events()
 
             # Get elapsed time since the last frame
-            timedelta = self.clock.tick(60) / 1000.0  # Assuming a target frame rate of 60 fps
+            timedelta = self.clock.tick(0) / 1000.0  # Assuming a target frame rate of 60 fps
 
             self.update_physics(timedelta)
             self.draw_circles()
